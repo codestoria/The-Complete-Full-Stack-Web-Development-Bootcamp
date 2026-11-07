@@ -1,0 +1,11 @@
+MDN-Docs-for-Heading-Elements
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements
+
+Windows-How-to-extract-files-from-Zipped-folder
+https://pureinfotech.com/extract-zip-file-windows-11-10/
+
+Mac-How-to-extract-files-from-a-Zipped-folder
+https://support.apple.com/en-gb/guide/mac-help/mchlp2528/mac
+
+Diff-Checker
+https://diffchecker.com
