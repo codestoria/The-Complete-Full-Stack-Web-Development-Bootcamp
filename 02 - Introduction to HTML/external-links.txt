@@ -1,5 +1,5 @@
 MDN-Docs-for-Heading-Elements
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements
 
 Windows-How-to-extract-files-from-Zipped-folder
 https://pureinfotech.com/extract-zip-file-windows-11-10/
