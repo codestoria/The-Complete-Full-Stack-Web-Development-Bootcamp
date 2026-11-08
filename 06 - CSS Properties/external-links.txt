@@ -1,0 +1,11 @@
+Docs-Named-Colours
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/named-color
+
+RGB-Colour-Sliders
+https://www.csfieldguide.org.nz/en/interactives/rgb-mixer/
+
+CSS-Inspection-Practice-Website
+https://appbrewery.github.io/css-inspection/
+
+Pesticide-Extension
+https://chromewebstore.google.com/detail/pesticide-for-chrome/bakpbgckdnepkmkeaiomhmfcnejndkbi?pli=1
