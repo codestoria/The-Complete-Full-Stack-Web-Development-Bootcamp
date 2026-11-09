@@ -38,7 +38,7 @@ This guide covers the four core values of `position` — `static`, `relative`, `
 The `position` property accepts four common values:
 
 ```css
-position: static;    /* default */
+position: static;  /* default */
 position: relative;
 position: absolute;
 position: fixed;
@@ -134,8 +134,8 @@ Relative positioning is useful when you want to:
 In HTML, elements are nested. An **ancestor** is any element that contains the current element. A **descendant** is any element contained inside it.
 
 ```html
-<div class="outer">        <!-- ancestor -->
-  <div class="middle">     <!-- ancestor of .inner, descendant of .outer -->
+<div class="outer">            <!-- ancestor -->
+  <div class="middle">         <!-- ancestor of .inner, descendant of .outer -->
     <div class="inner"></div>  <!-- descendant -->
   </div>
 </div>
@@ -158,7 +158,7 @@ A **positioned ancestor** is an ancestor whose `position` value is **not** `stat
 
 ```css
 .parent {
-  position: relative;   /* now this is a positioned ancestor */
+  position: relative;  /* now this is a positioned ancestor */
   width: 500px;
   height: 300px;
   background: steelblue;
