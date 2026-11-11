@@ -30,6 +30,11 @@ footer {
   width: 45%;
 }
 
+.card-text {
+  color: #555;
+  line-height: 1.6;
+}
+
 .left {
   float: left;
 }
