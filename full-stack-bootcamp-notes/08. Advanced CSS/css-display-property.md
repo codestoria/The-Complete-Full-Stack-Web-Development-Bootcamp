@@ -170,7 +170,7 @@ Ordinary inline elements participate in line layout. They generate inline boxes 
 }
 ```
 
-If you have two `inline-block` elements—for example, one that is 200×200 and another that is 20×100—they will:
+If you have two `inline-block` elements — for example, one that is 200×200 and another that is 20×100 — they will:
 
 - Respect their custom widths and heights.
 - Appear on the same horizontal line **if there is enough space**.
@@ -288,7 +288,7 @@ Change the display of all three elements to `inline-block`.
 
 **Why this works:** `inline-block` lets the elements keep their 200×200 size while also allowing them to sit next to each other on the same line.
 
-> If the browser window is too narrow to fit all three squares, they will wrap as needed. If the container is wide enough—roughly 600px plus any whitespace gaps—all three squares line up horizontally.
+> If the browser window is too narrow to fit all three squares, they will wrap as needed. If the container is wide enough — roughly 600px plus any whitespace gaps — all three squares line up horizontally.
 >
 > If you see small gaps between the squares, they come from whitespace in the HTML between inline-level boxes. You can remove that whitespace in the HTML, but modern layouts often use `flex` or `grid` to control spacing more reliably.
 
