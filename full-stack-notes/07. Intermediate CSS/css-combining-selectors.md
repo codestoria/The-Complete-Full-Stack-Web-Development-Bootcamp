@@ -365,7 +365,7 @@ Once you understand the individual combinators, you can combine them for even mo
 
 ```css
 ul p.done {
-  font-size: 0.5rem;
+  font-size: 0.9rem;
 }
 ```
 

@@ -287,7 +287,7 @@ This layout looks correct, but floats bring two issues worth understanding:
 
 2. **Unequal heights.** The two blocks may have different heights (due to different amounts of text). Floats do not equalize the heights of side-by-side elements — each block is only as tall as its content. A gap may appear below the shorter block.
 
-These limitations are why float is not suitable for layout, and why modern tools exist.
+These side effects are another reason `float` is awkward for multi-column page layouts compared with Flexbox or Grid.
 
 ---
 

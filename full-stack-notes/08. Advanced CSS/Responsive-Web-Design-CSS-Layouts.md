@@ -210,8 +210,8 @@ CSS:
 }
 
 .second {
-  /* flex: 0.5 is shorthand for flex-grow: 0.5; flex-shrink: 1; flex-basis: 0% */
-  flex: 0.5; /* take 0.5 parts: half as wide as a default item */
+  /* Shorthand for flex-grow: 0.5; flex-shrink: 1; flex-basis: 0% */
+  flex: 0.5; /* Half as wide as a flex: 1 item in remaining space */
 }
 ```
 

@@ -75,9 +75,7 @@ For ordinary author-written CSS, the browser compares conflicting declarations i
 
 > **Origin and importance first, then inline styles, then specificity, then source order. The first step that produces a clear winner decides the result.**
 
-For author-only CSS, the origin comparison is often tied, so the first practical question is usually whether one declaration is `!important`. **If there is no `!important` difference, the next question is whether one side is an inline style, and only then does specificity come into play.**
-
-This sentence is a simplification for everyday CSS. In particular, “inline styles” is not a separate origin: it is a style-attribute step that is compared after origin and importance. The next sections explain each part carefully.
+In practice, when comparing author CSS, check `!important` first, then whether a declaration comes from a `style` attribute, then selector specificity, and finally source order. *(Note: Inline styles are evaluated at a dedicated cascade step after origin/importance and before selector specificity, rather than acting as a separate origin.)*
 
 Think of it as a series of filters. At each step, the browser asks a yes/no question. If one declaration clearly wins, the comparison stops. If the declarations are still tied, the browser moves to the next step.
 

@@ -2,13 +2,22 @@
 
 ## Contents
 
-1. [Why the `display` Property Matters](#1-why-the-display-property-matters)
-2. [Default Layout Behavior: Block and Inline](#2-default-layout-behavior-block-and-inline)
-3. [The `display` Property and Its Common Values](#3-the-display-property-and-its-common-values)
-4. [Hiding Elements: `display: none`](#4-hiding-elements-display-none)
-5. [Comparison Table](#5-comparison-table)
-6. [Hands-On Practice: The Three-Square Challenge](#6-hands-on-practice-the-three-square-challenge)
-7. [Key Takeaways](#7-key-takeaways)
+- [CSS `display` Property: Controlling Page Layout](#css-display-property-controlling-page-layout)
+  - [Contents](#contents)
+  - [1. Why the `display` Property Matters](#1-why-the-display-property-matters)
+  - [2. Default Layout Behavior: Block and Inline](#2-default-layout-behavior-block-and-inline)
+    - [Example: A `<span>` Inside a Paragraph](#example-a-span-inside-a-paragraph)
+  - [3. The `display` Property and Its Common Values](#3-the-display-property-and-its-common-values)
+    - [3.1 `display: block`](#31-display-block)
+    - [3.2 `display: inline`](#32-display-inline)
+    - [3.3 `display: inline-block`](#33-display-inline-block)
+  - [4. Hiding Elements: `display: none`](#4-hiding-elements-display-none)
+  - [5. Comparison Table](#5-comparison-table)
+  - [6. Hands-On Practice: The Three-Square Challenge](#6-hands-on-practice-the-three-square-challenge)
+    - [Setup](#setup)
+    - [Challenge 1: Line Them Up Horizontally](#challenge-1-line-them-up-horizontally)
+    - [Challenge 2: Stack Them Vertically](#challenge-2-stack-them-vertically)
+  - [7. Key Takeaways](#7-key-takeaways)
 
 ---
 
@@ -71,7 +80,7 @@ This is why `<span>` is often used to style a small piece of text inside another
 
 ## 3. The `display` Property and Its Common Values
 
-The `display` property accepts many values. For basic layout, three values are especially important:
+The `display` property accepts many values. For basic layout, `block`, `inline`, and `inline-block` are the three core layout values you will use most often (and we will cover `display: none` right after in Section 4):
 
 ```css
 /* Choose one value per element: */
@@ -97,7 +106,7 @@ When an element has `display: block`:
 
 ```text
 [        Block Element (fills available width)        ]
-[        Next Element (new line)                       ]
+[        Next Element (new line)                      ]
 ```
 
 Even if you reduce the width of a block-level element, the next block-level element will **not** move up beside it in normal flow. The block-level element still starts on its own line, so the following block-level element begins below it. The remaining horizontal space is simply left empty unless you use another layout method such as floats, `flex`, or `grid`. Positioning is a separate layout mechanism and is not part of normal flow.
