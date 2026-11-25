@@ -1,0 +1,35 @@
+name: Package Full-Stack Notes Zip
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - "full-stack-notes/**"
+      - .github/workflows/package-full-stack-notes.yml
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: package-full-stack-notes
+  cancel-in-progress: true
+
+jobs:
+  build-zip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create zip archive of notes
+        run: zip -r full-stack-notes.zip full-stack-notes -x "*.DS_Store"
+
+      - name: Publish rolling release asset
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: full-stack-notes-latest
+          name: Latest Full-Stack Notes Archive
+          body: "Automatically built from `full-stack-notes/` on `main` (`${{ github.sha }}`)."
+          files: full-stack-notes.zip
+          make_latest: false
